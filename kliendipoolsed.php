@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Document</title>
+        <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     </head>
     <body>
 
@@ -34,10 +35,10 @@
     <br>
     <br>
 
-    <!-- kassi koera pildi vahetus script -->
-    <img id="catdog" onclick="changeImage()" src="images/cat.png" width="200" height="200">
+   <!-- kassi koera pildi vahetus script -->
+   <!-- <img id="catdog" onclick="vahetus()" src="images/cat.png" width="200" height="200">
     <script type="text/javascript">
-        function changeImage() {
+        function vahetus() {
             var image = document.getElementById('catdog');
             if (image.src.match("dog")) {
                 image.src = "images/cat.png";
@@ -45,6 +46,16 @@
                 image.src = "images/dog.jpg";
             }
         }
+    </script> -->
+
+    <!-- jQuery kass/koera pilt -->
+
+    <img id="src" src="images/cat.png" width="200" height="200" />
+
+    <script>
+    $("img[src='images/cat.png']").click(function () {
+    $(this).attr("src","images/dog.jpg")
+    })
     </script>
     </body>
 </html>
