@@ -24,5 +24,6 @@
     </script>
 
     <a href="javascript:TereMaailmKHKee();">Tere maailm</a>
+    <a href="#" onClick="alert('Jääme siia')">Jääme siia</a>
     </body>
 </html>
