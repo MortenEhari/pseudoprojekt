@@ -5,12 +5,14 @@
         <title>Document</title>
     </head>
     <body>
-    <button onclick="TereMaailmButton()">Tere maailm</button>
+    <button onclick="TereMaailmButton()">
+        Tere maailm
+    </button>
 
     <script>
-        function TereMaailmButton() {
-            alert("Tere maailm");
-        }
+            function TereMaailmButton() {
+                alert("Tere maailm");
+            }
     </script>
     </body>
 </html>
