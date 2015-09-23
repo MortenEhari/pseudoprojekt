@@ -57,5 +57,26 @@
     $(this).attr("src","images/dog.jpg")
     })
     </script>
+
+    <!-- taustavärvi muutmine -->
+
+    <input type="button" id="red" value="red" />
+    <input type="button" id="green" value="green" />
+    <input type="button" id="blue" value="blue" />
+
+    <script>
+        $( "#red" ).on( "click", function() {
+            $("body").first().css("background-color","red");
+        });
+
+        $("#green").on("click", function(){
+            $("body").first().css("background-color", "green");
+        });
+
+        $("#blue").on("click", function(){
+            $("body").first().css("background-color", "blue");
+        });
+
+    </script>
     </body>
 </html>
